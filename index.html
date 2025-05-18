@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ঈদের সেরা অফার!</title> <meta property="og:title" content="ঈদের সেরা অফার! আপনার জন্য বিশেষ চমক!" />
+    <meta property="og:description" content="এই দে অবিশ্বাস্য সব অফার জিতুন! সম্পূর্ণ বিনামূল্যে আকর্ষণীয় ডাটা, টকটাইম সহ আরও অনেক কিছু! এখনই লিঙ্কে ক্লিক করে আপনার ঈদ উপহার সংগ্রহ করুন। অফার সীমিত!" />
+    <meta property="og:image" content="https://i.ibb.co/FLg1mqjQ/images-Aspose-Words-d2005c40-2ca9-4667-8033-66d47f6febc2-001.png" />
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE" /> <meta property="og:type" content="website" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #0a4f70; /* গাঢ় নীল */
+            --secondary-color: #f0c04a; /* সোনালী */
+            --accent-color: #e85a4f;  /* আকর্ষণীয় লাল/কমলা */
+            --text-color: #333;
+            --light-text-color: #f8f9fa;
+            --container-bg: #ffffff;
+            --success-color: #2ecc71; /* সবুজ */
+            --font-family: 'Hind Siliguri', 'Arial', sans-serif;
+            --heading-font: 'Baloo Da 2', 'Hind Siliguri', cursive;
+        }
+
+        body {
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1b7cac 100%);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            background-color: var(--container-bg);
+            padding: 25px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 550px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header .eid-banner-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        header .eid-banner-link img {
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            display: block;
+        }
+        header img { /* সাধারণ img ট্যাগের জন্য একটি বেসিক স্টাইল যদি আগের ক্লাসগুলো না থাকে */
+            max-width: 380px;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px auto;
+            border-radius: 15px;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+
+        h2, h3 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        h2 { font-size: 2em; line-height: 1.3; }
+        h3 { font-size: 1.6em; color: var(--accent-color); }
+
+        .phone-input-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 15px;
+        }
+
+        #phoneNumber {
+            padding: 15px 20px;
+            border: 2px solid #b0bec5;
+            border-radius: 30px;
+            font-size: 1em;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: calc(100% - 44px);
+            box-sizing: border-box;
+            text-align: center;
+            font-family: var(--font-family);
+        }
+
+        #phoneNumber:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 10px rgba(240, 192, 74, 0.5);
+        }
+
+        .custom-button {
+            background: linear-gradient(135deg, var(--secondary-color), #FFD700);
+            color: var(--primary-color);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 700;
+            font-family: var(--heading-font);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(240, 192, 74, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .custom-button:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 8px 20px rgba(240, 192, 74, 0.6); }
+        .custom-button:disabled { background: #b0bec5; color: #78909c; cursor: not-allowed; box-shadow: none; transform: none; }
+
+        #loading-section { padding: 30px 0; }
+        .loader { border: 6px solid #f3f3f3; border-top: 6px solid var(--secondary-color); border-radius: 50%; width: 60px; height: 60px; animation: spin 1.2s linear infinite; margin: 0 auto 15px auto; }
+        #loading-section p { font-size: 1.1em; color: var(--primary-color); font-weight: 500; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        #scratch-card-section { padding: 20px 0; }
+        #scratchCardContainer { position: relative; width: 320px; height: 160px; margin: 20px auto; border-radius: 15px; overflow: hidden; cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="%23f0c04a"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm-1-17h2v7h-2v-7zm0 10h2v2h-2v-2z"/></svg>') 16 16, grab; border: 3px dashed var(--secondary-color); background-color: #fff; }
+        #scratchCard { position: absolute; top: 0; left: 0; z-index: 1; background-color: transparent; }
+        #scratchCoverText { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 2; color: var(--primary-color); font-weight: bold; font-size: 1.2em; font-family: var(--heading-font); background-color: rgba(240, 192, 74, 0.85); text-shadow: 1px 1px 2px var(--light-text-color); pointer-events: none; border-radius: 12px; transition: opacity 0.3s ease; }
+        #offerText { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9); font-size: 1.7em; font-weight: 700; font-family: var(--heading-font); color: var(--accent-color); z-index: 0; background-color: rgba(255, 255, 255, 0.9); padding: 20px 30px; border-radius: 10px; width: calc(100% - 40px); box-sizing: border-box; opacity: 0; transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        #offerText.revealed { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+        .share-button { background: linear-gradient(135deg, var(--success-color), #27ae60); color: var(--light-text-color); padding: 15px 30px; border: none; border-radius: 30px; cursor: pointer; font-size: 1.1em; font-weight: 700; font-family: var(--heading-font); margin-top: 20px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4); text-transform: uppercase; letter-spacing: 1px; width: 100%; max-width: 300px; }
+        .share-button:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 8px 20px rgba(46, 204, 113, 0.6); }
+
+        #share-info-section { padding: 20px; background-color: #fff8e1; border-radius: 15px; margin-top: 20px; border: 2px solid var(--secondary-color); }
+        #share-info-section p { font-size: 1.1em; line-height: 1.6; color: var(--primary-color); }
+        #wonOffer { font-weight: 700; color: var(--accent-color); font-size: 1.4em; display: inline-block; margin: 5px 0; padding: 5px 10px; background-color: var(--secondary-color); color: var(--primary-color); border-radius: 8px; }
+        .referral-link-container { display: flex; flex-direction: column; align-items: center; margin: 20px 0; gap: 10px; }
+        #referralLink { padding: 12px 18px; border: 2px solid #ccc; border-radius: 25px; font-size: 0.95em; font-family: 'Courier New', Courier, monospace; flex-grow: 1; background-color: #f1f1f1; color: var(--primary-color); text-align: center; width: calc(100% - 40px); box-sizing: border-box; }
+        #copyLinkButton { background-color: var(--primary-color); color: var(--light-text-color); padding: 12px 25px; border: none; border-radius: 25px; cursor: pointer; font-size: 1em; font-weight: 600; font-family: var(--heading-font); transition: background-color 0.3s, transform 0.2s; width: auto; }
+        #copyLinkButton:hover { background-color: #073752; transform: scale(1.05); }
+        #shareProgress { font-size: 1em; color: var(--primary-color); font-weight: 500; margin-top: 10px; }
+        #shareProgress span { color: var(--accent-color); font-weight: 700; font-size: 1.2em; }
+        #shareMessage { margin-top:15px; font-size:1em; font-weight: 600; }
+
+        .hidden { display: none !important; }
+        footer { margin-top: 30px; font-size: 0.9em; color: var(--light-text-color); opacity: 0.8; }
+
+        @media (max-width: 380px) { h2 { font-size: 1.6em; } h3 { font-size: 1.3em; } #offerText { font-size: 1.3em; padding: 15px 20px; } .custom-button, .share-button, #copyLinkButton { font-size: 1em; padding: 12px 25px;} }
+        @media (min-width: 500px) { .phone-input-bar { flex-direction: row; justify-content: center; } #phoneNumber { width: 60%; margin-right: 10px; margin-bottom: 0; text-align: left; } .custom-button { width: auto; } .referral-link-container { flex-direction: row; } #referralLink { width: 70%; margin-right: 10px; margin-bottom: 0; } }
+
+        .toast-message { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: var(--primary-color); color: var(--light-text-color); padding: 12px 25px; border-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; opacity: 0; transition: opacity 0.5s, bottom 0.5s; font-size: 0.95em; font-family: var(--font-family); }
+        .toast-message.show { opacity: 1; bottom: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://iili.io/34sXUfS.png" alt="34sXUfS.png" border="0" />
+        </header>
+
+        <main>
+            <section id="phone-section">
+                <h2>ঈদ হোক অফার দিয়ে রঙিন!</h2>
+                <p style="margin-bottom:20px; font-size: 1.05em; color: #555; line-height:1.6;">
+                    এই পবিত্র ঈদে আপনার জন্য অপেক্ষা করছে অসাধারণ সব উপহার! <br>এখনই আপনার ফোন নম্বর দিয়ে জিতে নিন আকর্ষণীয় ডাটা প্যাক, টকটাইম এবং আরও অনেক কিছু!
+                </p>
+                <div class="phone-input-bar">
+                    <input type="tel" id="phoneNumber" placeholder="আপনার ১১ সংখ্যার ফোন নম্বর" maxlength="11" pattern="[0][1][3-9][0-9]{8}">
+                    <button id="activateButton" class="custom-button">অফার চালু করুন</button>
+                </div>
+            </section>
+
+            <section id="loading-section" class="hidden">
+                <div class="loader"></div>
+                <p>আপনার জন্য সেরা অফারটি প্রস্তুত করা হচ্ছে... একটু অপেক্ষা করুন!</p>
+            </section>
+
+            <section id="scratch-card-section" class="hidden">
+                <h2>খুশির স্ক্র্যাচ, ঈদের উপহার!</h2>
+                <div id="scratchCardContainer">
+                    <div id="scratchCoverText">ঈদ মোবারক! <br> উপহার পেতে এখানে টাচ করে ঘষুন</div>
+                    <canvas id="scratchCard" width="320" height="160"></canvas>
+                    <div id="offerText" class="hidden"> {/* প্রাথমিকভাবে hidden ক্লাস থাকবে */}
+                        {অফার এখানে}
+                    </div>
+                </div>
+                <button id="shareButton" class="share-button hidden">বন্ধুদের জানান ও অফারটি নিন!</button>
+            </section>
+
+            <section id="share-info-section" class="hidden">
+                <h3>🎉 সাবাশ! আপনি একটি অফার জিতেছেন! 🎉</h3>
+                <p>আপনার প্রাপ্ত অফার: <strong id="wonOffer"></strong></p>
+                <p>এই দারুণ অফারটি নিশ্চিত করতে, নিচের রেফারেল লিঙ্কটি আপনার বন্ধুদের সাথে শেয়ার করুন। মাত্র <strong style="color:var(--accent-color)">২০টি সফল শেয়ার</strong> সম্পন্ন হলেই অফারটি আপনার!</p>
+                <div class="referral-link-container">
+                    <input type="text" id="referralLink" readonly>
+                    <button id="copyLinkButton" class="custom-button" style="background: var(--primary-color); color: var(--light-text-color); max-width:160px; font-size:1em;">লিঙ্ক কপি করুন</button>
+                </div>
+                <p id="shareProgress">এখনও <span id="remainingShares">20</span> টি শেয়ার বাকি।</p>
+                <p id="shareMessage" style="color: var(--primary-color);"></p>
+            </section>
+        </main>
+
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+            <p style="font-size: 1.05em; color: var(--text-color);">
+                🎁 <a href="https://fuyadheartgmailcom.itch.io/mathmind-ai-assistant" target="_blank" style="color: var(--accent-color); font-weight: bold;">আরও offer পেতে এখানে ক্লিক করুন এবং download করুন।</a>
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top:10px; margin-bottom: 20px;">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '96108f73498fb9b6b137cf1f6419fcb9',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/96108f73498fb9b6b137cf1f6419fcb9/invoke.js"></script>
+        </div>
+
+        <footer>
+            <p>&copy; ২০২৫ ঈদের সেরা অফার। সর্বস্বত্ব সংরক্ষিত।</p>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast-message"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const phoneSection = document.getElementById('phone-section');
+        const loadingSection = document.getElementById('loading-section');
+        const scratchCardSection = document.getElementById('scratch-card-section');
+        const shareInfoSection = document.getElementById('share-info-section');
+
+        const phoneNumberInput = document.getElementById('phoneNumber');
+        const activateButton = document.getElementById('activateButton');
+        const shareButton = document.getElementById('shareButton');
+        const copyLinkButton = document.getElementById('copyLinkButton');
+
+        const scratchCardContainer = document.getElementById('scratchCardContainer');
+        const canvas = document.getElementById('scratchCard');
+        const ctx = canvas.getContext('2d');
+        const offerTextElement = document.getElementById('offerText');
+        const scratchCoverTextElement = document.getElementById('scratchCoverText');
+        const wonOfferElement = document.getElementById('wonOffer');
+        const referralLinkInput = document.getElementById('referralLink');
+        const remainingSharesElement = document.getElementById('remainingShares');
+        const shareMessageElement = document.getElementById('shareMessage');
+        const toastElement = document.getElementById('toast');
+
+        const offers = [
+            "১GB", "৫০০MB", "৭০০MB", "২GB", "২০ টাকা রিচার্জ", "২০ মিনিট",
+            "১৫০ মিনিট", "১০০ SMS", "৫০ টাকা রিচার্জ", "৫GB", "১০০ মিনিট",
+            "২০০ SMS", "২০ মিনিট", "৪০ টাকা রিচার্জ"
+        ];
+        let currentOffer = '';
+        let referralCode = '';
+        const SHARES_NEEDED = 20;
+        let sharesCompleted = parseInt(localStorage.getItem('eidOfferSharesCompleted_v2')) || 0;
+
+
+        const canvasWidth = canvas.width;
+        const canvasHeight = canvas.height;
+        let isDrawing = false;
+        const SCRATCH_RADIUS = 22;
+        let isScratchComplete = false;
+
+        function showToast(message, duration = 3000) {
+            toastElement.textContent = message;
+            toastElement.classList.add('show');
+            setTimeout(() => {
+                toastElement.classList.remove('show');
+            }, duration);
+        }
+
+        function initScratchCard() {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+            const gradient = ctx.createLinearGradient(0, 0, canvasWidth, canvasHeight);
+            gradient.addColorStop(0, '#f0c04a');
+            gradient.addColorStop(0.5, '#FFD700');
+            gradient.addColorStop(1, '#f0c04a');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+            ctx.globalCompositeOperation = 'destination-out';
+
+            currentOffer = offers[Math.floor(Math.random() * offers.length)];
+            offerTextElement.textContent = currentOffer;
+            offerTextElement.classList.add('hidden');
+            offerTextElement.classList.remove('revealed');
+
+            scratchCoverTextElement.style.opacity = '1';
+            scratchCoverTextElement.style.display = 'flex';
+
+            isScratchComplete = false;
+            scratchCardContainer.style.borderStyle = 'dashed';
+            scratchCardContainer.style.borderColor = 'var(--secondary-color)';
+
+            canvas.removeEventListener('mousedown', startDrawing);
+            canvas.removeEventListener('touchstart', startDrawing);
+            canvas.removeEventListener('mouseup', stopDrawing);
+            canvas.removeEventListener('touchend', stopDrawing);
+            canvas.removeEventListener('mousemove', draw);
+            canvas.removeEventListener('touchmove', draw);
+
+            canvas.addEventListener('mousedown', startDrawing, { passive: false });
+            canvas.addEventListener('touchstart', startDrawing, { passive: false });
+            canvas.addEventListener('mouseup', stopDrawing);
+            canvas.addEventListener('touchend', stopDrawing);
+            canvas.addEventListener('mousemove', draw, { passive: false });
+            canvas.addEventListener('touchmove', draw, { passive: false });
+        }
+
+        function getBrushPos(xRef, yRef) {
+            const canvasRect = canvas.getBoundingClientRect();
+            return {
+                x: (xRef - canvasRect.left) * (canvasWidth / canvasRect.width),
+                y: (yRef - canvasRect.top) * (canvasHeight / canvasRect.height)
+            };
+        }
+
+        function startDrawing(event) {
+            if (isScratchComplete) return;
+            isDrawing = true;
+            if (scratchCoverTextElement.style.opacity !== '0') {
+                scratchCoverTextElement.style.opacity = '0';
+                setTimeout(() => { scratchCoverTextElement.style.display = 'none'; }, 300);
+            }
+            const pos = getBrushPos(event.clientX || event.touches[0].clientX, event.clientY || event.touches[0].clientY);
+            scratchPoint(pos.x, pos.y);
+            event.preventDefault();
+        }
+
+        function stopDrawing() {
+            if (isDrawing) {
+                isDrawing = false;
+                checkScratchCompletion();
+            }
+        }
+
+        function draw(event) {
+            if (!isDrawing || isScratchComplete) return;
+            const pos = getBrushPos(event.clientX || event.touches[0].clientX, event.clientY || event.touches[0].clientY);
+            scratchPoint(pos.x, pos.y);
+            event.preventDefault();
+        }
+
+        function scratchPoint(x, y) {
+            ctx.beginPath();
+            ctx.arc(x, y, SCRATCH_RADIUS, 0, Math.PI * 2, false);
+            ctx.fill();
+        }
+
+        function checkScratchCompletion() {
+            if (isScratchComplete) return;
+            const imageData = ctx.getImageData(0, 0, canvasWidth, canvasHeight);
+            const pixels = imageData.data;
+            let transparentPixels = 0;
+            for (let i = 3; i < pixels.length; i += 4) {
+                if (pixels[i] < 128) { transparentPixels++; }
+            }
+            const scratchedPercentage = (transparentPixels / (canvasWidth * canvasHeight)) * 100;
+
+            if (scratchedPercentage > 65) {
+                isScratchComplete = true;
+                offerTextElement.classList.remove('hidden');
+                offerTextElement.classList.add('revealed');
+                scratchCardContainer.style.borderStyle = 'solid';
+                scratchCardContainer.style.borderColor = 'var(--success-color)';
+                setTimeout(() => { shareButton.classList.remove('hidden'); }, 500);
+
+                canvas.removeEventListener('mousedown', startDrawing);
+                canvas.removeEventListener('touchstart', startDrawing);
+                canvas.removeEventListener('mouseup', stopDrawing);
+                canvas.removeEventListener('touchend', stopDrawing);
+                canvas.removeEventListener('mousemove', draw);
+                canvas.removeEventListener('touchmove', draw);
+            }
+        }
+
+        activateButton.addEventListener('click', () => {
+            const phoneNumber = phoneNumberInput.value.trim();
+            if (phoneNumber.length === 11 && /^[0][1][3-9][0-9]{8}$/.test(phoneNumber)) {
+                phoneSection.classList.add('hidden');
+                loadingSection.classList.remove('hidden');
+                activateButton.disabled = true;
+                setTimeout(() => {
+                    loadingSection.classList.add('hidden');
+                    scratchCardSection.classList.remove('hidden');
+                    initScratchCard();
+                    activateButton.disabled = false;
+                }, 2000);
+            } else {
+                showToast('অনুগ্রহ করে একটি সঠিক ১১ সংখ্যার বাংলাদেশি ফোন নম্বর দিন (যেমন 01xxxxxxxxx)।');
+            }
+        });
+
+        shareButton.addEventListener('click', () => {
+            const ogTitleElement = document.querySelector('meta[property="og:title"]');
+            const ogDescriptionElement = document.querySelector('meta[property="og:description"]');
+
+            const shareTitle = ogTitleElement ? ogTitleElement.getAttribute('content') : 'ঈদের সেরা অফার!';
+            const dynamicShareText = `দেখুন আমি কী জিতেছি: "${currentOffer}"! আপনিও এই ঈদে দারুণ সব অফার জিততে পারেন। এখনই লিঙ্কে ক্লিক করে আপনার ঈদ উপহারটি লুফে নিন। দেরি করলেই মিস! 🎁`;
+            const shareText = ogDescriptionElement ? `${dynamicShareText} ${ogDescriptionElement.getAttribute('content')}` : dynamicShareText;
+
+            const siteUrl = document.querySelector('meta[property="og:url"]');
+            const baseUrl = siteUrl && siteUrl.getAttribute('content') !== "YOUR_WEBSITE_URL_HERE" ? siteUrl.getAttribute('content') : (window.location.origin + window.location.pathname);
+
+            referralCode = 'eid' + Date.now().toString(36) + Math.random().toString(36).substring(2, 5);
+            const shareUrl = `${baseUrl}?ref=${referralCode}&via=share`;
+
+            referralLinkInput.value = shareUrl;
+
+            if (navigator.share) {
+                console.log("শেয়ার করার চেষ্টা করা হচ্ছে:", { title: shareTitle, text: shareText, url: shareUrl });
+                navigator.share({
+                    title: shareTitle,
+                    text: shareText,
+                    url: shareUrl
+                }).then(() => {
+                    showToast('শেয়ার করার জন্য আপনাকে ধন্যবাদ!');
+                    sharesCompleted++;
+                    localStorage.setItem('eidOfferSharesCompleted_v2', sharesCompleted.toString());
+                    updateShareProgressUI();
+                    if (shareInfoSection.classList.contains('hidden')) {
+                        scratchCardSection.classList.add('hidden');
+                        shareInfoSection.classList.remove('hidden');
+                        wonOfferElement.textContent = currentOffer;
+                    }
+                }).catch((error) => {
+                    console.error('শেয়ার করতে সমস্যা:', error);
+                    if (error.name !== 'AbortError') {
+                       showToast('দুঃখিত, শেয়ার করা যায়নি। লিঙ্কটি কপি করে ম্যানুয়ালি শেয়ার করুন।');
+                    }
+                    if (shareInfoSection.classList.contains('hidden')) {
+                        scratchCardSection.classList.add('hidden');
+                        shareInfoSection.classList.remove('hidden');
+                        wonOfferElement.textContent = currentOffer;
+                    }
+                    updateShareProgressUI();
+                });
+            } else {
+                showToast('দুঃখিত, আপনার ব্রাউজার স্বয়ংক্রিয় শেয়ারিং সমর্থন করে না। লিঙ্কটি কপি করে বন্ধুদের সাথে শেয়ার করুন।');
+                if (shareInfoSection.classList.contains('hidden')) {
+                    scratchCardSection.classList.add('hidden');
+                    shareInfoSection.classList.remove('hidden');
+                    wonOfferElement.textContent = currentOffer;
+                }
+                updateShareProgressUI();
+            }
+        });
+
+        copyLinkButton.addEventListener('click', () => {
+            referralLinkInput.select();
+            referralLinkInput.setSelectionRange(0, 99999);
+            try {
+                document.execCommand('copy');
+                showToast('রেফারেল লিঙ্ক সফলভাবে কপি করা হয়েছে!');
+            } catch (err) {
+                showToast('লিঙ্ক কপি করা যায়নি। অনুগ্রহ করে ম্যানুয়ালি চেষ্টা করুন।');
+            }
+            window.getSelection().removeAllRanges();
+        });
+
+        function updateShareProgressUI() {
+            const remaining = SHARES_NEEDED - sharesCompleted;
+            remainingSharesElement.textContent = Math.max(0, remaining);
+            if (remaining <= 0) {
+                shareProgress.innerHTML = `🎉 অভিনন্দন! আপনি সফলভাবে <strong style="color:var(--success-color)">${SHARES_NEEDED}</strong> টি শেয়ার সম্পন্ন করেছেন!`;
+                shareMessageElement.textContent = 'আপনার অফারটি অ্যাকাউন্টে শীঘ্রই যোগ হয়ে যাবে। ঈদ মোবারক!';
+                shareMessageElement.style.color = 'var(--success-color)';
+            } else {
+                 shareMessageElement.textContent = `অফারটি নিশ্চিত করতে আরও ${remaining} টি শেয়ার প্রয়োজন।`;
+                 shareMessageElement.style.color = 'var(--primary-color)';
+            }
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const refCodeFromUrl = urlParams.get('ref');
+        if (refCodeFromUrl) {
+            const alreadyVisitedViaRef = localStorage.getItem(`visited_ref_${refCodeFromUrl}_v2`);
+            if (!alreadyVisitedViaRef) {
+                showToast(`আপনি একটি রেফারেল লিঙ্কের মাধ্যমে এসেছেন! আমাদের অফারগুলো দেখুন।`, 4000);
+                localStorage.setItem(`visited_ref_${refCodeFromUrl}_v2`, 'true');
+            }
+        }
+        updateShareProgressUI();
+    });
+    </script>
+<script type='text/javascript' src='//pl26667650.profitableratecpm.com/51/8f/d0/518fd0ce7157d30b4abfe0ddd46ad5bb.js'></script>
+</body>
+</html>
